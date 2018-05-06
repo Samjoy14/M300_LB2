@@ -1,0 +1,12 @@
+docker images
+docker ps -a
+docker pull mysql
+docker pull wordpress
+docker images
+
+docker run --name qas-sql -e MYSQL_ROOT_PASSWORD=password -d mysql:latest
+docker run --name qas-wordpress --link qas-sql:mysql -p 8080:80 -d wordpress
+
+docker ps -a
+docker-machine ip
+"192.168.100.100"
