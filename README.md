@@ -13,7 +13,7 @@ Bei meinen Fall habe in einem Container zwei VMs erstellt. Hier noch die dazu ge
 # vi: set ft=ruby :
 
 #
-#	Ubuntu Xenial 64-bit Linux mit Docker
+#Ubuntu Xenial mit Docker
 #
 
 Vagrant.configure("2") do |config|
